@@ -1,0 +1,67 @@
+#rectangle {
+    width: 300px;
+    height: 500px;
+    background: white;
+    margin-top: 20%;
+    margin-left: 50%;
+    border-color: red;
+    border-style: solid; 
+    border-radius: 15px;
+
+    #heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        margin-top: 80px;
+        margin-left: 60px;
+    }
+    #heart:before,
+    #heart:after {
+        position: absolute;
+        content: "";
+        left: 120px;
+        top: 0;
+        width: 50px;
+        height: 90px;
+        background: black;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-135deg);
+        transform-origin: 0 100%;
+    }
+    #heart:after {
+        left: 0;
+        transform: rotate(135deg);
+        transform-origin: 100% 100%;
+}
+
+    #triangle-up {
+        width: 0px;
+        height: 20px;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 70px solid black;
+        margin-left: 115px;
+    }
+
+
+}
+
+#rectangle:hover {
+    box-shadow: 0 18px 20px 0 rgba(132, 158, 228, 0.24), 0 17px 50px 0 rgba(123, 160, 216, 0.19);
+}
+
+span{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div span:first-child{
+    margin-left: 30px;
+
+}
+
+div span:last-child{
+    margin-left: 230px;
+    margin-top: 20px;
+
+}
